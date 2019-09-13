@@ -3,10 +3,13 @@
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
+import BootstrapVue from "bootstrap-vue";
 
 
 require('./bootstrap');
 import Swal from "sweetalert2";
+import housePhotos from "./components/housePhotos";
+
 window.Vue = require('vue');
 window.swal = Swal;
 
@@ -15,13 +18,12 @@ window.swal = Swal;
  * Vue components. It will recursively scan this directory for the Vue
  * components and automatically register them with their "basename".
  *
- * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
+ * Eg. ./components/housePhotos.vue -> <example-component></example-component>
  */
 
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
-
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.use(BootstrapVue);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -31,4 +33,7 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 
 const app = new Vue({
     el: '#app',
+    components:{
+        housePhotos
+    }
 });
