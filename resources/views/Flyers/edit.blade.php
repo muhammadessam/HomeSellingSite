@@ -10,6 +10,15 @@
               id="uploadImages">
             @csrf
         </form>
+        <vue-dropzone
+            ref="/photos/{{$flyer->id}}/photos"
+            id="dropzone"
+            :options="{url:'/photos/{{$flyer->id}}/photos', headers:{'X-CSRF-TOKEN':document.head.querySelector('[name=csrf-token]').content}}">
+
+
+
+        </vue-dropzone>
+
     @endcan
 
 @endsection

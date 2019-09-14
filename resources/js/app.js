@@ -10,6 +10,11 @@ require('./bootstrap');
 import Swal from "sweetalert2";
 import housePhotos from "./components/housePhotos";
 import imageSlider from "./components/imageSlider";
+import vue2Dropzone from 'vue2-dropzone'
+import 'vue2-dropzone/dist/vue2Dropzone.min.css'
+
+
+
 window.Vue = require('vue');
 window.swal = Swal;
 
@@ -35,6 +40,7 @@ const app = new Vue({
     el: '#app',
     components:{
         'housePhotos':housePhotos,
-        'imageSlider':imageSlider
+        'imageSlider':imageSlider,
+        'vueDropzone': vue2Dropzone
     }
 });
