@@ -5,7 +5,6 @@
             <!-- feature -->
             <div class="feature-item">
                 <div class="feature-pic set-bg" data-setbg="img/feature/2.jpg">
-                    <div class="sale-notic">FOR SALE</div>
                 </div>
                 <div class="feature-text">
                     <div class="text-center feature-title">
@@ -37,13 +36,17 @@
             </div>
         </div>
     </div>
+
 </template>
 
 <script>
     export default {
         name: 'housePhotos',
-        mounted() {
-            console.log('Component mounted.')
+        props: ['houses'],
+        data() {
+            return {
+                housesArray: this.houses
+            }
         }
     }
 </script>

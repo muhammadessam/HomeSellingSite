@@ -14,7 +14,8 @@ class FlyerController extends Controller
      */
     public function index()
     {
-        return view('Flyers.index');
+        $flyers = Flyer::all();
+        return view('Flyers.index', compact('flyers'));
     }
 
     /**

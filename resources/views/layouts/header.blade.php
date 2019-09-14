@@ -54,10 +54,19 @@
                         <a href="https://www.linkedin.com/in/muhammad-essam-022a53b8/"><i
                                 class="fa fa-linkedin"></i></a>
                     </div>
-                    <div class="user-panel">
-                        <a href="/register"><i class="fa fa-user-circle-o"></i> Register</a>
-                        <a href="/login"><i class="fa fa-sign-in"></i> Login</a>
-                    </div>
+                    @if(!Auth::check())
+                        <div class="user-panel">
+                            <a href="/register"><i class="fa fa-user-circle-o"></i> Register</a>
+                            <a href="/login"><i class="fa fa-sign-in"></i> Login</a>
+                        </div>
+                    @else
+                        <div class="user-panel">
+                            <form action="/logout" method="post">
+                                @csrf
+                                <button type="submit" class="btn btn-outline-light"><i class="fa fa-user-circle-o"></i>Logout</button>
+                            </form>
+                        </div>
+                    @endif
                 </div>
             </div>
         </div>

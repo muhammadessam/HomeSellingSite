@@ -7,6 +7,7 @@ use Faker\Generator as Faker;
 
 $factory->define(Flyer::class, function (Faker $faker) {
     return [
-        //
+        'street'=>$faker->streetAddress,
+        'city'=>$faker->city,
     ];
 });

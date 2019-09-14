@@ -1878,9 +1878,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'housePhotos',
+  props: ['houses'],
+  data: function data() {
+    return {
+      housesArray: this.houses
+    };
+  },
   mounted: function mounted() {
     console.log('Component mounted.');
   }
@@ -68740,14 +68745,10 @@ var staticRenderFns = [
     return _c("div", { staticClass: "row" }, [
       _c("div", { staticClass: "col-lg-4 col-md-6" }, [
         _c("div", { staticClass: "feature-item" }, [
-          _c(
-            "div",
-            {
-              staticClass: "feature-pic set-bg",
-              attrs: { "data-setbg": "img/feature/2.jpg" }
-            },
-            [_c("div", { staticClass: "sale-notic" }, [_vm._v("FOR SALE")])]
-          ),
+          _c("div", {
+            staticClass: "feature-pic set-bg",
+            attrs: { "data-setbg": "img/feature/2.jpg" }
+          }),
           _vm._v(" "),
           _c("div", { staticClass: "feature-text" }, [
             _c("div", { staticClass: "text-center feature-title" }, [
