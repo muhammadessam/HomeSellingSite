@@ -43,8 +43,7 @@ class FlyerController extends Controller
     public function store(FlyerRequest $request)
     {
         auth()->user()->flyers()->create($request->all());
-        session()->flash('projectCreated');
-        return redirect('/flyers');
+        return redirect('/flyers')->withToastSuccess('Project Published');
     }
 
     /**

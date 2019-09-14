@@ -722,6 +722,8 @@
 </footer>
 <!-- Footer section end -->
 
+
+
 <!--====== Javascripts & Jquery ======-->
 <script src="{{asset('js/app.js')}}"></script>
 <script src="{{asset('js/owl.carousel.min.js')}}"></script>

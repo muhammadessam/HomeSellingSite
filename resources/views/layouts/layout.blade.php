@@ -169,21 +169,7 @@
 <link rel="stylesheet" href="{{asset('css/owl.carousel.css')}}"/>
 <link rel="stylesheet" href="{{asset('css/style.css')}}"/>
 <link rel="stylesheet" href="{{asset('css/app.css')}}">
-@if(session('projectCreated'))
-    <script>
-        swal.mixin(
-            {
-                toast: true,
-                position: 'top-end',
-                showConfirmButton: false,
-                timer: 2000
-            }
-        ).fire({
-            type: 'success',
-            title: 'Project Created Successfully '
-        });
-    </script>
+@include('sweetalert::alert')
 
-@endif
 </body>
 </html>
