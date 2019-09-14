@@ -1,4 +1,4 @@
 @extends('layouts.layout')
 @section('content')
-    <house-photos></house-photos>
+    <house-photos :flyers="{{$flyers}}"></house-photos>
 @endsection

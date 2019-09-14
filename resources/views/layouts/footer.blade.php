@@ -54,10 +54,33 @@
         </div>
     </div>
 </footer>
-<!--====== Javascripts & Jquery ======-->
 <script src="{{asset('js/app.js')}}"></script>
 <script src="{{asset('js/owl.carousel.min.js')}}"></script>
 <script src="{{asset('js/masonry.pkgd.min.js')}}"></script>
 <script src="{{asset('js/magnific-popup.min.js')}}"></script>
 <script src="{{asset('js/main.js')}}"></script>
 <script src="{{asset('js/dropzone.js')}}"></script>
+
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}"/>
+<link rel="stylesheet" href="{{asset('css/animate.css')}}"/>
+<link rel="stylesheet" href="{{asset('css/owl.carousel.css')}}"/>
+<link rel="stylesheet" href="{{asset('css/style.css')}}"/>
+<link rel="stylesheet" href="{{asset('css/app.css')}}">
+@if(session('projectCreated'))
+    <script>
+        swal.mixin(
+            {
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 2000
+            }
+        ).fire({
+            type: 'success',
+            title: 'Project Created Successfully '
+        });
+    </script>
+
+@endif

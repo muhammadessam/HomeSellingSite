@@ -13,13 +13,6 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}"/>
-    <link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}"/>
-    <link rel="stylesheet" href="{{asset('css/animate.css')}}"/>
-    <link rel="stylesheet" href="{{asset('css/owl.carousel.css')}}"/>
-    <link rel="stylesheet" href="{{asset('css/style.css')}}"/>
-    <link rel="stylesheet" href="{{asset('css/app.css')}}">
 
 
     <!--[if lt IE 9]>
@@ -53,7 +46,8 @@
                     <div class="top-social">
                         <a href="https://www.facebook.com/muhammadessam95"><i class="fa fa-facebook"></i></a>
                         <a href="https://twitter.com/Muhammed_essam9"><i class="fa fa-twitter"></i></a>
-                        <a href="https://www.linkedin.com/in/muhammad-essam-022a53b8/"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/muhammad-essam-022a53b8/"><i
+                                class="fa fa-linkedin"></i></a>
                     </div>
                     @if(!Auth::check())
                         <div class="user-panel">
@@ -64,7 +58,8 @@
                         <div class="user-panel">
                             <form action="/logout" method="post">
                                 @csrf
-                                <button type="submit" class="btn btn-outline-light"><i class="fa fa-user-circle-o"></i>Logout</button>
+                                <button type="submit" class="btn btn-outline-light"><i class="fa fa-user-circle-o"></i>Logout
+                                </button>
                             </form>
                         </div>
                     @endif
@@ -97,7 +92,8 @@
 <section class="hero-section set-bg" data-setbg="img/bg.jpg">
     <div class="container hero-text text-white">
         <h2>find your place with our local life style</h2>
-        <p>Search real estate property records, houses, condos, land and more on leramiz.com®.<br>Find property info from the most comprehensive source data.</p>
+        <p>Search real estate property records, houses, condos, land and more on leramiz.com®.<br>Find property info
+            from the most comprehensive source data.</p>
         <a href="/flyers/create" class="site-btn">Sell Your House</a>
 
     </div>
@@ -121,7 +117,6 @@
     </div>
 </div>
 <!-- Filter form section end -->
-
 
 
 <!-- Properties section -->
@@ -203,21 +198,24 @@
                         <i class="fa fa-comments"></i>
                         <div class="service-text">
                             <h5>Consultant Service</h5>
-                            <p>In Aenean purus, pretium sito amet sapien denim consectet sed urna placerat sodales magna leo.</p>
+                            <p>In Aenean purus, pretium sito amet sapien denim consectet sed urna placerat sodales magna
+                                leo.</p>
                         </div>
                     </div>
                     <div class="service-item">
                         <i class="fa fa-home"></i>
                         <div class="service-text">
                             <h5>Properties Management</h5>
-                            <p>In Aenean purus, pretium sito amet sapien denim consectet sed urna placerat sodales magna leo.</p>
+                            <p>In Aenean purus, pretium sito amet sapien denim consectet sed urna placerat sodales magna
+                                leo.</p>
                         </div>
                     </div>
                     <div class="service-item">
                         <i class="fa fa-briefcase"></i>
                         <div class="service-text">
                             <h5>Renting and Selling</h5>
-                            <p>In Aenean purus, pretium sito amet sapien denim consectet sed urna placerat sodales magna leo.</p>
+                            <p>In Aenean purus, pretium sito amet sapien denim consectet sed urna placerat sodales magna
+                                leo.</p>
                         </div>
                     </div>
                 </div>
@@ -452,7 +450,6 @@
 <!-- feature section end -->
 
 
-
 <!-- feature category section -->
 <section class="feature-category-section spad">
     <div class="container">
@@ -523,7 +520,6 @@
 <!-- Gallery section end -->
 
 
-
 <!-- Review section -->
 <section class="review-section set-bg" data-setbg="img/review-bg.jpg">
     <div class="container">
@@ -536,7 +532,9 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                 </div>
-                <p>“Leramiz was quick to understand my needs and steer me in the right direction. Their professionalism and warmth made the process of finding a suitable home a lot less stressful than it could have been. Thanks, agent Tony Holland.”</p>
+                <p>“Leramiz was quick to understand my needs and steer me in the right direction. Their professionalism
+                    and warmth made the process of finding a suitable home a lot less stressful than it could have been.
+                    Thanks, agent Tony Holland.”</p>
                 <h5>Stacy Mc Neeley</h5>
                 <span>CEP’s Director</span>
                 <div class="clint-pic set-bg" data-setbg="img/review/1.jpg"></div>
@@ -549,7 +547,9 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                 </div>
-                <p>“Leramiz was quick to understand my needs and steer me in the right direction. Their professionalism and warmth made the process of finding a suitable home a lot less stressful than it could have been. Thanks, agent Tony Holland.”</p>
+                <p>“Leramiz was quick to understand my needs and steer me in the right direction. Their professionalism
+                    and warmth made the process of finding a suitable home a lot less stressful than it could have been.
+                    Thanks, agent Tony Holland.”</p>
                 <h5>Stacy Mc Neeley</h5>
                 <span>CEP’s Director</span>
                 <div class="clint-pic set-bg" data-setbg="img/review/1.jpg"></div>
@@ -562,7 +562,9 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                 </div>
-                <p>“Leramiz was quick to understand my needs and steer me in the right direction. Their professionalism and warmth made the process of finding a suitable home a lot less stressful than it could have been. Thanks, agent Tony Holland.”</p>
+                <p>“Leramiz was quick to understand my needs and steer me in the right direction. Their professionalism
+                    and warmth made the process of finding a suitable home a lot less stressful than it could have been.
+                    Thanks, agent Tony Holland.”</p>
                 <h5>Stacy Mc Neeley</h5>
                 <span>CEP’s Director</span>
                 <div class="clint-pic set-bg" data-setbg="img/review/1.jpg"></div>
@@ -588,7 +590,8 @@
                     <span><i class="fa fa-user"></i>Amanda Seyfried</span>
                     <span><i class="fa fa-clock-o"></i>25 Jun 201</span>
                 </div>
-                <p>Integer luctus diam ac scerisque consectetur. Vimus dotnetact euismod lacus sit amet. Aenean interdus mid vitae maximus...</p>
+                <p>Integer luctus diam ac scerisque consectetur. Vimus dotnetact euismod lacus sit amet. Aenean interdus
+                    mid vitae maximus...</p>
             </div>
             <div class="col-lg-4 col-md-6 blog-item">
                 <img src="img/blog/2.jpg" alt="">
@@ -597,16 +600,19 @@
                     <span><i class="fa fa-user"></i>Amanda Seyfried</span>
                     <span><i class="fa fa-clock-o"></i>25 Jun 201</span>
                 </div>
-                <p>Integer luctus diam ac scerisque consectetur. Vimus dotnetact euismod lacus sit amet. Aenean interdus mid vitae maximus...</p>
+                <p>Integer luctus diam ac scerisque consectetur. Vimus dotnetact euismod lacus sit amet. Aenean interdus
+                    mid vitae maximus...</p>
             </div>
             <div class="col-lg-4 col-md-6 blog-item">
                 <img src="img/blog/3.jpg" alt="">
-                <h5><a href="single-blog.html">NYC luxury housing market saturated with inventory, says celebrity realtor</a></h5>
+                <h5><a href="single-blog.html">NYC luxury housing market saturated with inventory, says celebrity
+                        realtor</a></h5>
                 <div class="blog-meta">
                     <span><i class="fa fa-user"></i>Amanda Seyfried</span>
                     <span><i class="fa fa-clock-o"></i>25 Jun 201</span>
                 </div>
-                <p>Integer luctus diam ac scerisque consectetur. Vimus dotnetact euismod lacus sit amet. Aenean interdus mid vitae maximus...</p>
+                <p>Integer luctus diam ac scerisque consectetur. Vimus dotnetact euismod lacus sit amet. Aenean interdus
+                    mid vitae maximus...</p>
             </div>
         </div>
     </div>
@@ -638,14 +644,14 @@
 <!-- Clients section end -->
 
 
-
 <!-- Footer section -->
 <footer class="footer-section set-bg" data-setbg="img/footer-bg.jpg">
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-6 footer-widget">
                 <img src="img/logo.png" alt="">
-                <p>Lorem ipsum dolo sit azmet, consecter dipise consult  elit. Maecenas mamus antesme non anean a dolor sample tempor nuncest erat.</p>
+                <p>Lorem ipsum dolo sit azmet, consecter dipise consult elit. Maecenas mamus antesme non anean a dolor
+                    sample tempor nuncest erat.</p>
                 <div class="social">
                     <a href="#"><i class="fa fa-facebook"></i></a>
                     <a href="#"><i class="fa fa-twitter"></i></a>
@@ -706,7 +712,9 @@
             </div>
             <div class="copyright">
                 <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                    All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by
+                    <a href="https://colorlib.com" target="_blank">Colorlib</a>
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
             </div>
         </div>
@@ -720,5 +728,15 @@
 <script src="{{asset('js/masonry.pkgd.min.js')}}"></script>
 <script src="{{asset('js/magnific-popup.min.js')}}"></script>
 <script src="{{asset('js/main.js')}}"></script>
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}"/>
+<link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}"/>
+<link rel="stylesheet" href="{{asset('css/animate.css')}}"/>
+<link rel="stylesheet" href="{{asset('css/owl.carousel.css')}}"/>
+<link rel="stylesheet" href="{{asset('css/style.css')}}"/>
+<link rel="stylesheet" href="{{asset('css/app.css')}}">
+
+
 </body>
 </html>

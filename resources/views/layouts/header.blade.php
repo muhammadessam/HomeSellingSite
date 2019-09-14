@@ -13,12 +13,6 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}"/>
-    <link rel="stylesheet" href="{{asset('css/animate.css')}}"/>
-    <link rel="stylesheet" href="{{asset('css/owl.carousel.css')}}"/>
-    <link rel="stylesheet" href="{{asset('css/style.css')}}"/>
-    <link rel="stylesheet" href="{{asset('css/app.css')}}">
 
 
     <!--[if lt IE 9]>
@@ -92,4 +86,5 @@
 <section class="page-top-section set-bg" data-setbg="{{asset('img/page-top-bg.jpg')}}">
     <div class="container text-white">
     </div>
+
 </section>

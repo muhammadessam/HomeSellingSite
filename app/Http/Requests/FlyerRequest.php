@@ -30,6 +30,10 @@ class FlyerRequest extends FormRequest
             'country'=>'required',
             'zip'=>'required',
             'price'=>'required|integer',
+            'numberOfBedRooms'=>'required|integer',
+            'area'=>'required|integer',
+            'numberOfGarages'=>'required|integer',
+            'numberOfBathRooms'=>'required|integer',
 
         ];
     }

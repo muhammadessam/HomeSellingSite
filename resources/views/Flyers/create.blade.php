@@ -24,6 +24,23 @@
         </div>
         <hr>
         <div class="form-group">
+            <label for="numberOfBedRooms">Bed Rooms:</label>
+            <input type="number" name="numberOfBedRooms" id="numberOfBedRooms" class="form-control" value="{{old('numberOfBedRooms')}}">
+        </div>
+        <div class="form-group">
+            <label for="area">Area:</label>
+            <input type="number" name="area" id="area" class="form-control" value="{{old('area')}}">
+        </div>
+        <div class="form-group">
+            <label for="numberOfGarages">Garages:</label>
+            <input type="number" name="numberOfGarages" id="numberOfGarages" class="form-control" value="{{old('numberOfGarages')}}">
+        </div>
+        <div class="form-group">
+            <label for="numberOfBathRooms">Bathrooms:</label>
+            <input type="text" name="numberOfBathRooms" id="numberOfBathRooms" class="form-control" value="{{old('numberOfBathRooms')}}">
+        </div>
+        <hr>
+        <div class="form-group">
             <label for="Price">Price:</label>
             <input type="text" name="price" id="Price" class="form-control" value="{{old('Price')}}">
         </div>

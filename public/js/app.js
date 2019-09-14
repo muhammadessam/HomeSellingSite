@@ -1879,12 +1879,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'housePhotos',
-  props: ['houses'],
+  props: ['flyers'],
   data: function data() {
     return {
-      housesArray: this.houses
+      flyersArray: this.flyers
     };
   }
 });
@@ -68733,15 +68736,11 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-lg-4 col-md-6" }, [
+  return _c(
+    "div",
+    { staticClass: "row" },
+    _vm._l(_vm.flyersArray, function(flyer) {
+      return _c("div", { key: flyer.id, staticClass: "col-lg-4 col-md-6" }, [
         _c("div", { staticClass: "feature-item" }, [
           _c("div", {
             staticClass: "feature-pic set-bg",
@@ -68750,11 +68749,11 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("div", { staticClass: "feature-text" }, [
             _c("div", { staticClass: "text-center feature-title" }, [
-              _c("h5", [_vm._v("305 North Palm Drive")]),
+              _c("h5", [_vm._v(_vm._s(flyer.street))]),
               _vm._v(" "),
               _c("p", [
                 _c("i", { staticClass: "fa fa-map-marker" }),
-                _vm._v(" Beverly Hills, CA 90210")
+                _vm._v(" " + _vm._s(flyer.city))
               ])
             ]),
             _vm._v(" "),
@@ -68763,51 +68762,57 @@ var staticRenderFns = [
                 _c("div", { staticClass: "rf-left" }, [
                   _c("p", [
                     _c("i", { staticClass: "fa fa-th-large" }),
-                    _vm._v(" 1500 Square foot")
+                    _vm._v(_vm._s(flyer.area))
                   ]),
                   _vm._v(" "),
                   _c("p", [
                     _c("i", { staticClass: "fa fa-bed" }),
-                    _vm._v(" 16 Bedrooms")
+                    _vm._v(_vm._s(flyer.numberOfBedRooms))
                   ])
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "rf-right" }, [
                   _c("p", [
                     _c("i", { staticClass: "fa fa-car" }),
-                    _vm._v(" 2 Garages")
+                    _vm._v(_vm._s(flyer.numberOfGarages))
                   ]),
                   _vm._v(" "),
                   _c("p", [
                     _c("i", { staticClass: "fa fa-bath" }),
-                    _vm._v(" 8 Bathrooms")
+                    _vm._v(_vm._s(flyer.numberOfBathRooms))
                   ])
                 ])
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "room-info" }, [
-                _c("div", { staticClass: "rf-left" }, [
-                  _c("p", [
-                    _c("i", { staticClass: "fa fa-user" }),
-                    _vm._v(" Gina Wesley")
-                  ])
-                ]),
+                _vm._m(0, true),
                 _vm._v(" "),
                 _c("div", { staticClass: "rf-right" }, [
                   _c("p", [
                     _c("i", { staticClass: "fa fa-clock-o" }),
-                    _vm._v(" 1 days ago")
+                    _vm._v(" " + _vm._s(flyer.created_at - Date.now()))
                   ])
                 ])
               ])
             ]),
             _vm._v(" "),
-            _c("a", { staticClass: "room-price", attrs: { href: "#" } }, [
-              _vm._v("$4,500,000")
+            _c("a", { staticClass: "room-price" }, [
+              _vm._v(_vm._s(flyer.price))
             ])
           ])
         ])
       ])
+    }),
+    0
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "rf-left" }, [
+      _c("p", [_c("i", { staticClass: "fa fa-user" }), _vm._v(" Gina Wesley")])
     ])
   }
 ]

@@ -1,5 +1,6 @@
 <?php
 
+use Faker\Factory;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
@@ -20,6 +21,13 @@ class CreateFlyersTable extends Migration
             $table->string('city');
             $table->string('country');
             $table->string('state');
+
+            $table->unsignedInteger('numberOfBedRooms');
+            $table->unsignedInteger('area');
+            $table->unsignedInteger('numberOfGarages');
+            $table->unsignedInteger('numberOfBathRooms');
+
+
             $table->string('price');
             $table->text('description');
             $table->unsignedBigInteger('user_id');
