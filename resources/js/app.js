@@ -9,7 +9,7 @@ import BootstrapVue from "bootstrap-vue";
 require('./bootstrap');
 import Swal from "sweetalert2";
 import housePhotos from "./components/housePhotos";
-
+import imageSlider from "./components/imageSlider";
 window.Vue = require('vue');
 window.swal = Swal;
 
@@ -34,6 +34,7 @@ Vue.use(BootstrapVue);
 const app = new Vue({
     el: '#app',
     components:{
-        housePhotos
+        'housePhotos':housePhotos,
+        'imageSlider':imageSlider
     }
 });
