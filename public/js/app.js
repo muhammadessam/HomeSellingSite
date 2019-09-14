@@ -1854,6 +1854,31 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'housePhotos',
   mounted: function mounted() {
@@ -68712,18 +68737,74 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row justify-content-center" }, [
-        _c("div", { staticClass: "col-md-8" }, [
-          _c("div", { staticClass: "card" }, [
-            _c("div", { staticClass: "card-header" }, [
-              _vm._v("Example Component")
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-lg-4 col-md-6" }, [
+        _c("div", { staticClass: "feature-item" }, [
+          _c(
+            "div",
+            {
+              staticClass: "feature-pic set-bg",
+              attrs: { "data-setbg": "img/feature/2.jpg" }
+            },
+            [_c("div", { staticClass: "sale-notic" }, [_vm._v("FOR SALE")])]
+          ),
+          _vm._v(" "),
+          _c("div", { staticClass: "feature-text" }, [
+            _c("div", { staticClass: "text-center feature-title" }, [
+              _c("h5", [_vm._v("305 North Palm Drive")]),
+              _vm._v(" "),
+              _c("p", [
+                _c("i", { staticClass: "fa fa-map-marker" }),
+                _vm._v(" Beverly Hills, CA 90210")
+              ])
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "card-body" }, [
-              _vm._v(
-                "\n                    I'm an example component.\n                "
-              )
+            _c("div", { staticClass: "room-info-warp" }, [
+              _c("div", { staticClass: "room-info" }, [
+                _c("div", { staticClass: "rf-left" }, [
+                  _c("p", [
+                    _c("i", { staticClass: "fa fa-th-large" }),
+                    _vm._v(" 1500 Square foot")
+                  ]),
+                  _vm._v(" "),
+                  _c("p", [
+                    _c("i", { staticClass: "fa fa-bed" }),
+                    _vm._v(" 16 Bedrooms")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "rf-right" }, [
+                  _c("p", [
+                    _c("i", { staticClass: "fa fa-car" }),
+                    _vm._v(" 2 Garages")
+                  ]),
+                  _vm._v(" "),
+                  _c("p", [
+                    _c("i", { staticClass: "fa fa-bath" }),
+                    _vm._v(" 8 Bathrooms")
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "room-info" }, [
+                _c("div", { staticClass: "rf-left" }, [
+                  _c("p", [
+                    _c("i", { staticClass: "fa fa-user" }),
+                    _vm._v(" Gina Wesley")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "rf-right" }, [
+                  _c("p", [
+                    _c("i", { staticClass: "fa fa-clock-o" }),
+                    _vm._v(" 1 days ago")
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("a", { staticClass: "room-price", attrs: { href: "#" } }, [
+              _vm._v("$4,500,000")
             ])
           ])
         ])
@@ -81070,8 +81151,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\Muhammad\Desktop\PHP\Flyer\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\Muhammad\Desktop\PHP\Flyer\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\Muhammad\Desktop\PHP\Flyer Project\Flyer\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\Muhammad\Desktop\PHP\Flyer Project\Flyer\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
