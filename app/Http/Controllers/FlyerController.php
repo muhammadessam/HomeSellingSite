@@ -61,7 +61,7 @@ class FlyerController extends Controller
      */
     public function edit(Flyer $flyer)
     {
-        //
+        return view('Flyers.edit', compact('flyer'));
     }
 
     /**

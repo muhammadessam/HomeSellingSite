@@ -2,11 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Flyer;
 use App\Photo;
 use Illuminate\Http\Request;
 
 class PhotoController extends Controller
 {
+
+
     /**
      * Display a listing of the resource.
      *
@@ -20,7 +23,8 @@ class PhotoController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @param Flyer $flyer
+     * @return void
      */
     public function create()
     {
@@ -33,9 +37,13 @@ class PhotoController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Flyer $flyer,Request $request)
     {
-        //
+        $file = $request->file('file');
+        $name = time().$file->getClientOriginalName();
+        $file->move('images/Photos', $name);
+        $flyer->photos()->create(['path'=>"/images/Photos/$name"]);
+        return 'done';
     }
 
     /**

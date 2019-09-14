@@ -8,7 +8,7 @@
                 </div>
                 <div class="feature-text">
                     <div class="text-center feature-title">
-                        <h5>{{flyer.street}}</h5>
+                        <h5><a :href="'flyers/'+flyer.id+'/edit'">{{flyer.street}}</a></h5>
                         <p><i class="fa fa-map-marker"></i> {{flyer.city}}</p>
                     </div>
                     <div class="room-info-warp">

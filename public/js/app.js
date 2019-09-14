@@ -68749,7 +68749,11 @@ var render = function() {
           _vm._v(" "),
           _c("div", { staticClass: "feature-text" }, [
             _c("div", { staticClass: "text-center feature-title" }, [
-              _c("h5", [_vm._v(_vm._s(flyer.street))]),
+              _c("h5", [
+                _c("a", { attrs: { href: "flyers/" + flyer.id + "/edit" } }, [
+                  _vm._v(_vm._s(flyer.street))
+                ])
+              ]),
               _vm._v(" "),
               _c("p", [
                 _c("i", { staticClass: "fa fa-map-marker" }),
