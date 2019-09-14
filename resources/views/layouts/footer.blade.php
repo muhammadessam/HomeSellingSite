@@ -1,8 +1,8 @@
-<footer class="footer-section set-bg" data-setbg="img/footer-bg.jpg">
+<footer class="footer-section set-bg" data-setbg="{{asset('img/footer-bg.jpg')}}">
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-6 footer-widget">
-                <img src="img/logo.png" alt="">
+                <img src="{{asset('img/logo.png')}}" alt="">
                 <p>Lorem ipsum dolo sit azmet, consecter dipise consult elit. Maecenas mamus antesme non anean a dolor
                     sample tempor nuncest erat.</p>
                 <div class="social">
@@ -50,25 +50,6 @@
                         <button><i class="fa fa-send"></i></button>
                     </form>
                 </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="footer-nav">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Featured Listing</a></li>
-                    <li><a href="">About us</a></li>
-                    <li><a href="">Pages</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </div>
-            <div class="copyright">
-                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    Copyright &copy;<script>document.write(new Date().getFullYear());</script>
-                    All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by
-                    <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
             </div>
         </div>
     </div>

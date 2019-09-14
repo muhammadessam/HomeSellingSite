@@ -17,6 +17,7 @@ class CreateFlyersTable extends Migration
             $table->bigIncrements('id');
             $table->string('street');
             $table->string('zip');
+            $table->string('city');
             $table->string('country');
             $table->string('state');
             $table->string('price');

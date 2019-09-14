@@ -12319,7 +12319,17 @@ main {
 }
 
 .page-top-section {
-  height: 170px;
+  height: 120px;
   padding-top: 100px;
+}
+
+#createNewFlyerForm {
+  padding: 10px;
+  border: #30CAA0 solid 1px;
+  border-radius: 3px;
+}
+
+.header-top {
+  margin-bottom: 20px;
 }
 

@@ -75,7 +75,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="site-navbar">
-                    <a href="#" class="site-logo"><img src="{{asset('img/logo.png')}}" alt=""></a>
+                    <a href="/" class="site-logo"><img src="{{asset('img/logo.png')}}" alt=""></a>
                     <div class="nav-switch">
                         <i class="fa fa-bars"></i>
                     </div>
@@ -89,7 +89,7 @@
         </div>
     </div>
 </header>
-<section class="page-top-section set-bg" data-setbg="img/page-top-bg.jpg">
+<section class="page-top-section set-bg" data-setbg="{{asset('img/page-top-bg.jpg')}}">
     <div class="container text-white">
     </div>
 </section>
